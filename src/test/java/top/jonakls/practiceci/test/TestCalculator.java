@@ -18,10 +18,4 @@ public class TestCalculator {
         Assertions.assertEquals(2, calculator.divide(6, 3));
         Assertions.assertThrows(IllegalArgumentException.class, () -> calculator.divide(1, 0));
     }
-
-    @Test
-    @DisplayName("Calculator Test fail")
-    public void falseTest() {
-        Assertions.assertEquals(6, calculator.add(2, 3));
-    }
 }
