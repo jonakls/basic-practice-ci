@@ -53,6 +53,10 @@ jobs:
     #
     # - name: Build with Gradle 8.9
     #   run: gradle build
+    - uses: actions/upload-artifact@v4
+      with:
+        name: PracticeApp
+        path: build/libs/*.jar
 
   dependency-submission:
 
