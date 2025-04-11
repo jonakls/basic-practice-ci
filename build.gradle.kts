@@ -14,6 +14,16 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
+tasks {
+    jar {
+        manifest {
+            attributes["Main-Class"] = "top.jonakls.practiceci.Main"
+        }
+
+        archiveBaseName.set("PracticeApp")
+    }
+}
+
 tasks.test {
     useJUnitPlatform()
 }
